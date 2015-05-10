@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZapperTest</string>
+    <string name="title_person_detail">Person Detail</string>
+    <string name="strAge">Age:</string>
+    <string name="strJob">Job</string>
+    <string name="strCountry">Country</string>
+    <string name="strAddress">Address</string>
+    <string name="strDescription">Description</string>
+
+</resources>

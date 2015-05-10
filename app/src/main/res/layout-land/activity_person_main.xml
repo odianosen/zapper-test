@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/main_toolbar_actionbar"
+        android:layout_gravity="top"
+        android:background="@color/toolbar_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <!--
+        This layout is a two-pane layout for the PersonList
+        master/detail flow.
+
+        -->
+
+        <FrameLayout android:id="@+id/person_list_container" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1" />
+
+        <FrameLayout android:id="@+id/person_detail_container" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="3" />
+
+    </LinearLayout>
+
+</LinearLayout>

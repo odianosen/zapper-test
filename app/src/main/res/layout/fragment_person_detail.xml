@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/person_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/TextAppearance.AppCompat.Medium"
+    android:padding="10dp" >
+
+    <ProgressBar
+        android:id="@+id/person_detail_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large" />
+
+    <TextView
+        android:id="@+id/lbl_person_detail_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:text="@string/strAge"/>
+
+    <TextView
+        android:id="@+id/txt_person_detail_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbl_person_detail_age"/>
+
+
+
+    <TextView
+        android:id="@+id/lbl_person_detail_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_person_detail_age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="8dp"
+        android:text="@string/strJob"/>
+
+    <TextView
+        android:id="@+id/txt_person_detail_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbl_person_detail_job"
+        android:layout_below="@id/txt_person_detail_age"/>
+
+
+
+    <TextView
+        android:id="@+id/lbl_person_detail_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_person_detail_job"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:text="@string/strCountry"/>
+
+    <TextView
+        android:id="@+id/txt_person_detail_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbl_person_detail_country"
+        android:layout_below="@id/txt_person_detail_job"/>
+
+
+
+    <TextView
+        android:id="@+id/lbl_person_detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_person_detail_country"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:text="@string/strAddress"/>
+
+    <TextView
+        android:id="@+id/txt_person_detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbl_person_detail_address"
+        android:layout_below="@id/txt_person_detail_country"/>
+
+
+    <TextView
+        android:id="@+id/lbl_person_detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_person_detail_address"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:text="@string/strDescription"/>
+
+    <TextView
+        android:id="@+id/txt_person_detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbl_person_detail_description"
+        android:layout_below="@id/txt_person_detail_address"/>
+
+
+</RelativeLayout>
